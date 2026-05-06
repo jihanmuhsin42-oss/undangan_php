@@ -1,5 +1,4 @@
 <?php
-
 include "koneksi.php"; 
 session_start();
 ?>
@@ -10,11 +9,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <h1>login</h1>
     <form method="POST">
-        <table border="1" cellpadding="10">
+        <table class="login" border="1" cellpadding="10">
             <tr>
                 <td>
                     <h5>email</h5>
@@ -26,6 +27,7 @@ session_start();
             <tr>
                 <td>
                     <button type="submit">login</button>
+                    <a href="tambah.php">daftar</a>
                 </td>
             </tr>
         </table>
@@ -51,7 +53,7 @@ if ($_POST) {
             echo "!password salah";
         }
     } else {
-        echo "email tidak di temukan";
+        echo "email tidak di temukan silahkan daftar terlebih dahulu";
         }
 }
 ?>

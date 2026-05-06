@@ -163,11 +163,11 @@ include "../koneksi.php"; ?>
             cursor: pointer;
             box-shadow: 0 0 15px rgba(0,0,0,0.3);
         }
+        
     </style>
 </head>
 
 <body>
-    <a href="logout.php">logout</a>
 
 <audio id="musik" loop>
     <source src="musik.mp3" type="audio/mpeg">

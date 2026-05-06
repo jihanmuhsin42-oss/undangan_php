@@ -1,5 +1,5 @@
 <?php
-include '../koneksi.php';?>
+include 'koneksi.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,6 +7,7 @@ include '../koneksi.php';?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tambah data</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>tambah data</h1>
@@ -29,7 +30,7 @@ include '../koneksi.php';?>
 
 <?php
 if(isset($_POST['simpan'])){
-    mysqli_query($conn, "INSERT INTO data_user (username, password, email, level) VALUES
+    mysqli_query($conn, "INSERT INTO data_user (username, password, email, level) VALUES (
     '$_POST[username]',
     '$_POST[password]',
     '$_POST[email]',
