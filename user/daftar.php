@@ -17,7 +17,7 @@ if (!isset($_SESSION['user'])) {
 </head>
 <body>
     <h1>Data user</h1>
-    <a href="tambah.php">+Tambah User</a>
+    <a href="../tambah.php">+Tambah User</a>
     <table border="1" cellpadding="10">
         <tr>
             <th>id</th>

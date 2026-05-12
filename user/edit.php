@@ -13,6 +13,7 @@ $item = mysqli_fetch_array($data);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>edit</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>edit</h1>
@@ -20,12 +21,12 @@ $item = mysqli_fetch_array($data);
         <table>
             <tr>
                 <td>
-                    username: <input type="text" name="username" VALUES="<?= $item['username']; ?>"><br><br>
-                    username: <input type="text" name="password" VALUES="<?= $item['password']; ?>"><br><br>
-                    username: <input type="text" name="email" VALUES="<?= $item['email']; ?>"><br><br>
-                    username: <input type="text" name="level" VALUES="<?= $item['level']; ?>"><br><br>
+                    username: <input type="text" name="username" value="<?= $item['username']; ?>"><br><br>
+                    password: <input type="text" name="password" value="<?= $item['password']; ?>"><br><br>
+                    email: <input type="text" name="email" value="<?= $item['email']; ?>"><br><br>
+                    level: <input type="text" name="level" value="<?= $item['level']; ?>"><br><br>
 
-                    <button type="submit" name="update"></button>
+                    <button type="submit" name="update">update</button>
                 </td>
             </tr>
         </table>
@@ -37,11 +38,12 @@ $item = mysqli_fetch_array($data);
 if(isset($_POST['update'])) {
     mysqli_query($conn, "UPDATE data_user SET
     username='$_POST[username]',
-    passwrd='$_POST[password]',
+    password='$_POST[password]',
     email='$_POST[email]',
-    level='$_POST[level]',
+    level='$_POST[level]'
+    WHERE id='$id'
     ");
 
-    header(location: index.php);
+    header("location: daftar.php");
 }
 ?>

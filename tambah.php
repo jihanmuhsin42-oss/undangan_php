@@ -12,7 +12,7 @@ include 'koneksi.php';?>
 <body>
     <h1>tambah data</h1>
     <form method="post">
-        <table>
+        <table border="1" cellpadding="10">
             <tr>
                 <td>
                     username: <input type="text" name="username"><br><br>

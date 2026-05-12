@@ -17,12 +17,13 @@ if (!isset($_SESSION['user'])) {
 </head>
 
 <body>
-    <a href="login.php" class="logout-btn">logout</a>
+        <a href="login.php" class="logout-btn">logout</a>
+        <a href="user/daftar.php" class="tambah-btn">Data Username</a>
 
     <div class="container">
         <h1>Fulan & Fulana</h1>
 
-        <button onclick="window.location.href='../tamu/dashboard.php'">
+        <button onclick="window.location.href='tamu/dashboard.php'">
             Buka Undangan 💍
         </button>
     </div>

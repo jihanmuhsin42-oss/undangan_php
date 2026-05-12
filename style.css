@@ -41,8 +41,8 @@ body{
             font-size:20px;
             border:none;
             border-radius:12px;
-            background:#f3f2f0;
-            color:#06cfd6;
+            background:#f0f3f0;
+            color:#134201;
             cursor:pointer;
             box-shadow:0 10px 25px rgba(0,0,0,0.4);
             transition:0.3s;
@@ -55,13 +55,13 @@ body{
         .login {
             margin: 100px auto;
             border-radius: 12px;
-            color: #ff1a1a;
-            background-color: #ff4d4d;
+            color: #134201;
+            background-color: #e6a37c;
         }
         a {
             display: inline-block;
             padding: 8px 10px;
-            color: #06cfd6;
+            color: #134201;
             border-radius: 8px;
             margin-bottom: 5px;
             transition: 0.3s;
@@ -86,4 +86,38 @@ body{
         .logout-btn:hover {
             background: #ff1a1a;
             transform: scale(1.05);
+        }
+        table {
+            margin: 100px auto;
+            border-radius: 12px;
+            color: #134201;
+            background-color: #e6a37c;
+            
+        }
+        .tambah-btn{
+        position:absolute;
+        top:20px;
+        left:20px;
+
+        padding:10px 20px;
+        background:#134201;
+        color:white;
+
+        border-radius:10px;
+        text-decoration:none;
+        font-weight:bold;
+
+        box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        transition:0.3s;
+
+        z-index:999;
+        }
+
+        .tambah-btn:hover{
+            background:#1c5c03;
+            transform:scale(1.05);
+        }
+
+        .logout-btn{
+            z-index:999;
         }
